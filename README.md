@@ -14,39 +14,39 @@ Pruža dodatne informacije o sadržaju HTML elementa
 ### Potrebno je HTML dokumentu dodijeliti oznaku jezika sadržaja "en".
 ### Koji atribut je potrebno dodijeliti elementu <html> kako bi se to postiglo?
 
-<html lang="en"></html>
+```<html lang="en"></html>```
 
 ### Kod otvaranja HTML dokumenta u web pregledniku u njegovom zaglavlju ispisuje se naslov "Učilište Algebra". Pomoću kojeg HTML elementa je naslov dokumenta postavljen?
 
-<title>Učilište Algebra</title>
+```<title>Učilište Algebra</title>```
 
 ### Zadan je sadržaj:
 https://example.com/movie.mp4
 Pomoću HTML-a objavite video sadržaj s kontrolama za upravljanje reprodukcijom sadržaja. Video formi dodijelite dimenzije 600 x 400 px. (zadatak riješiti u dostupnom code editoru).
 
-<video src="https://example.com/movie.mp4" controls width="600" height="400"></video>
+```<video src="https://example.com/movie.mp4" controls width="600" height="400"></video>```
 
 ### Zadan je sadržaj na sljedećoj relativnoj putanji:
 galerija/panorama-grada.jpg
 Pomoću HTML-a objavite grafiku te joj dodijelite dimenzije 720 x 500 px. Postavite zamjenski tekst "Panorama grada" (zadatak riješiti u dostupnom code editoru).
 
-<img src="galerija/panorama-grada.jpg" alt="Panorama grada" width="720" height="500" />
+```<img src="galerija/panorama-grada.jpg" alt="Panorama grada" width="720" height="500" />```
 
 ### Koji element koristimo za označavanje sadržaja koji predstavlja podnožje tijela stranice ili podnožje određene sekcije (sadrži autorska prava, kontakt podatke itd.)?
 
-<footer></footer>
+```<footer></footer>```
 
 ### Koji element koristimo za označavanje sadržaja koji predstavlja cjelinu neovisnog (samostalnog) sadržaja u dokumentu?
 
-<article></article>
+```<article></article>```
 
 ### Koji element koristimo za grupiranje sadržaja isključivo radi stiliziranja pomoću CSS-a (bez da mu damo značenje)?
 
-<div></div>
+```<div></div>```
 
 ### Koji element koristimo za tematsko grupiranje sadržaja?
 
-<section></section>
+```<section></section>```
 
 ### Što predstavlja pristupačnost web rješenja? Navedite nekoliko primjera kako se ona postiže.
 
@@ -59,23 +59,22 @@ Mogućnost da se web rješenje koristi prema potrebama i mogućnostima korisnika
 
 ### Nadopunite isječak koda tako da elementu dodijelite crvenu boju znakova preko linijskog zapisa.
 
-<p>Lorem ipsum dolor</p>
+```<p>Lorem ipsum dolor</p>```
 
 
-<p style="color: red;">Lorem ipsum dolor</p>
+```<p style="color: red;">Lorem ipsum dolor</p>```
 
 ### Nadopunite isječak koda tako da u zaglavlju HTML dokumenta dohvatite vanjsku CSS datoteku sa sljedeće lokacije: css/style.css
-<head>
 
-</head>
-
+```
 <head>
 <link rel="stylesheet" href="css/style.css" />
 </head>
+```
 
 ### Nadopunite isječak koda odgovarajućim selektorom tako da dohvatite sve HTML elemente koji sadrže atribut title s točnom vrijednošću "Učilište Algebra".
 
-
+```
 {
 display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
@@ -84,9 +83,11 @@ color: #eee; font-size: 20px;
 [title="Učilište Algebra"] { display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
 }
+```
 
 ### Nadopunite isječak koda odgovarajućim selektorom tako da dohvatite sve HTML elemente koji sadrže atribut title u čijoj vrijednosti se bilo gdje nalazi izraz "Algebra".
 
+```
 {
 display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
@@ -95,21 +96,25 @@ color: #eee; font-size: 20px;
 [title*="Algebra"] { display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
 }
+```
 
 ### Nadopunite isječak koda odgovarajućim selektorom tako da dohvatite sve HTML elemente koji sadrže atribut title na početku čije vrijednosti se nalazi izraz "Algebra".
 
-
+```
 {
 display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
 }
 
+
 [title^="Algebra"] { display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
 }
+```
 
 ### Nadopunite isječak koda odgovarajućim selektorom tako da dohvatite sve posjećene poveznice <a> (one koje su već bile otvarane).
 
+```
 {
 display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
@@ -119,10 +124,12 @@ a:visited {
 display: inline-block; padding: 2em;
 color: #eee; font-size: 20px;
 }
+```
 
 ### Nadopunite isječak koda odgovarajućim selektorom tako da dohvatite
 sve slike <img> iznad kojih je postavljen pokazivač miša.
 
+```
 {
 transform: scale(1.1);
 }
@@ -130,18 +137,21 @@ transform: scale(1.1);
 img:hover {
 transform: scale(1.1);
 }
+```
 
 ### Nadopunite isječak koda odgovarajućim selektorom tako da dohvatite sve paragrafe <p> koji su prvo dijete, određenog tipa, svog roditelja.
 
+```
 {
 color: #eee; font-size: 20px;
 }
 
 p:first-of-type { color: #eee; font-size: 20px;
 }
+```
 
 ### Nadopunite isječak koda odgovarajućim selektorom tako da ugradite sadržaj "Upamti: " sa zadanim stilovima prije postojećeg sadržaja naslova 1. razine <h1>.
-
+```
 {
 content: "Upamti: "; color: red;
 background-color: yellow;
@@ -151,9 +161,9 @@ h1::before {
 content: "Upamti: "; color: red;
 background-color: yellow;
 }
-
+```
 ### Vrijednost varijable "text-color" postavite kao boju znakova svih paragrafa.
-
+```
 :root {
 --text-color:
 }	
@@ -165,26 +175,26 @@ p {
 }		p {
 color: var(--text-color);
 }
-
+```
 ### Zadan je <article> element koji sadrži tekstualni sadržaj.
 Koristeći CSS selektirajte element i uredite ga tako da odgovara obliku na slici (pomoću margina centrirajte područje sadržaja elementa).
 Pretpostavite veličine i boje, one ne moraju biti u potpunosti točne.
-
+```
 article {
 background-color: #eee; text-align: justify; width: 300px;
 border: 5px solid #666; margin: 2em auto; padding: 2em;
 }
-
+```
 ### Zadan je <article> element koji sadrži tekstualni sadržaj.
 Koristeći CSS selektirajte element i uredite ga tako da odgovara obliku na slici (pomoću margina područje sadržaja elementa postavite na desnu stranu). Pretpostavite veličine i boje, one ne moraju biti u potpunosti točne.
-
+```
 article {
 background-color: #eee; text-align: justify; width: 25%;
 border-left: 8px double #666; border-right: 5px dashed #666; margin: 2em 0 2em auto; padding: 2em 4em;
 }
-
+```
 ### Na prazno mjesto upišite izraz za poziv SCSS funkcije "margin" te joj dodijelite dva cjelobrojna argumenta.
-
+```
 @function margin($a, $b) {
 @return $a * $b;
 }
@@ -200,10 +210,10 @@ margin-top: 	 * 1px;
 p {
 margin-top: margin(3, 2) * 1px;
 }
-
+```
 
 ### Unutar pravila koje obuhvaća sve elemente tipa <section> primijenite SCSS mixin "flex-container".
-
+```
 @mixin flex-container { display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -220,15 +230,14 @@ section {
 @include flex-container;
 
 }	}
-
+```
 ### Dohvatite "partials" datoteku sa sljedeće lokacije: base/_color.scss
 
-@import "base/color";
+```@import "base/color";```
 
 ### Kako se naziva proces prilagodbe CSS koda za produkciju, čime se smanjuje veličina datoteke te ubrzava njeno preuzimanje sa poslužitelja?
 
 Proces se naziva minifikacija ili minimizacija CSS koda.
-
 
 ### Je li JavaScript jezik predviđen za objektno-orijentirano ili funkcijsko programiranje?
 
@@ -244,7 +253,7 @@ JavaScript jezik se razvija prema ECMAScript specifikaciji:
 
 
 ### Što od navedenog nije ispravan identifikator varijable?
-1userData
+```1userData```
 b)$userData
 c)user_data
 d)user1Data
@@ -253,7 +262,6 @@ d)user1Data
 ### Koji izraz koristimo u definiciji spremnika za podatke ako želimo onemogućiti promjenu primitivne vrijednosti?
 
 const
-
 
 ### Opišite pojedine djelokruge varijabli.
 •globalni djelokrug (globalne varijable)
@@ -267,16 +275,17 @@ const
 •dostupne su samo unutar bloka u kojemu su definirane
 •moraju se deklarirati prije upotrebe te se ne mogu ponovo deklarirati
 
-
 ### Deklarirajte i inicijalizirajte varijable firstName i lastName i spojite ih u varijablu fullName, ali s razmakom (" ") između imena i prezimena.
 
+```
 var firstName = "John"; var lastName = "Doe";
 var fullName = firstName + " " + lastName;
 /* ili */
 var fullName = firstName.concat(" ", lastName);
-
+```
 
 ### Deklarirajte varijable y i z te im dodijelite proizvoljne vrijednosti. Nakon toga razlomite ovu ternarnu operaciju na 3 različite operacije (upotrebom grananja). Ispišite dobivenu vrijednost varijable x.
+```
 var x = z === 2 ? y : 5;
 
 var x;
@@ -291,22 +300,21 @@ else {
 
 
 x = 5;
-
+```
 
 ### Koji izraz možemo koristiti kao alternativu " if " izraza za postavljanje višestrukog grananja?
 
 Izraz "switch".
 
-
 ### Koliko puta će se izvršiti sljedeći blok naredbi?
-
+```
 for (let count = 0; count <= 10; count+=2) { console.log(count);
 }
-
+```
 6 puta.
 
 ### S obzirom da je uvjet petlje lažan blok naredbi se neće niti jedanput izvršiti. Promijenite definiciju uvjetne petlje tako se da blok naredbi uvijek izvrši barem jedanput, bez obzira o istinitosti uvjeta. Vrijednost varijable "count", kao i izraz uvjeta ne smijete promijeniti.
-
+```
 var count = 10;
 while (count < 10) { console.log(count); count++;
 }
@@ -314,7 +322,7 @@ while (count < 10) { console.log(count); count++;
 var count = 10;
 do { console.log(count); count++;
 } while (count < 10);
-
+```
 
 ### Unutar petlji možemo koristiti izraze "continue" i "break". Koja je razlika između njih?
 
@@ -322,7 +330,7 @@ Izraz "continue" prekida trenutnu iteraciju (odnosno trenutno izvršavanje bloka
 
 ### Napišite JavaScript funkciju koja prihvaća cjelobrojnu vrijednost kao argument te vraća poruku da li se radi o parnom ili neparnom broju.
 ### Pretpostavite da će argument uvijek biti cjelobrojna vrijednost.
-
+```
 function parniIliNeparni(a){
 if(a % 2 == 0){
 return "Broj " + a + " je paran.";
@@ -334,10 +342,10 @@ else {
 }
 
 return "Broj " + a + " je neparan.";
-
+```
 
 ### Napišite JavaScript funkciju koja prihvaća zadani niz kao argument i pronalazi najdužu riječ unutar niza. Vratite tu riječ iz funkcije i spremite u varijablu čiju ćete vrijednost ispisati u konzoli.
-
+```
 var rijeci = ['quickest', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'];
 
 var rijeci = ['quickest', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'];
@@ -352,12 +360,11 @@ rijec = niz[i];
 return rijec;
 }
 var najduljaRijec = pronadiNajduljuRijec(rijeci); console.log(najduljaRijec);
-
+```
 ### Što predstavlja BOM (Browser Object Model)?
 
 Skupina unaprijed definiranih objekata koji stranici (JavaScript-u) omogućuju interakciju s web preglednikom.
 Iako ne postoji službeni standard, većina web preglednika ipak ima implementirano identično sučelje za komunikaciju s JavaScript jezikom.
-
 
 ### Što predstavlja DOM (Document Object Model)?
 
@@ -371,30 +378,30 @@ Definira:
 
 ### Navedite barem tri metode objekta "document" za dohvaćanje HTML
 elemenata.
-
+```
 document.getElementById() document.getElementsByTagName() document.getElementsByClassName() document.getElementsByName() document.querySelector() document.querySelectorAll()
-
+```
 
 ### Koristeći JavaScript dohvatite HTML element preko njegova ID-a "zaglavlje" te mu dodajte novi podelement tipa <h1> s tekstom "Naslov" (novi element biti će posljednji podelement svog roditelja).
-
+```
 var roditelj = document.getElementById("zaglavlje"); roditelj.innerHTML += "<h1>Naslov</h1>";
 /* ili */
 var roditelj = document.getElementById("zaglavlje"); var naslov = document.createElement("h1"); naslov.textContent = "Naslov"; roditelj.appendChild(naslov);
-
+```
 
 ### Koristeći JavaScript dohvatite HTML element preko njegova ID-a "zaglavlje" te ga uklonite iz HTML stabla.
-
+```
 var element = document.getElementById("zaglavlje"); element.remove();
 /* ili */
 var element = document.getElementById("zaglavlje"); element.parentNode.removeChild(element);
-
+```
 
 ### Koristeći JavaScript dohvatite HTML element preko njegova ID-a "zaglavlje" te mu postavite sljedeću pozadinsku boju: "#ddd".
-
+```
 var element = document.getElementById("zaglavlje"); element.style.backgroundColor = "#ddd";
 /* ili */
 var element = document.getElementById("zaglavlje"); element.style.cssText = "background-color: #ddd;";
-
+```
 ### Što je sustav za verzioniranje koda te zašto se koristi u web razvoju?
 
 Odgovor:
@@ -418,30 +425,30 @@ projekta.
 Može biti lokalni ili na nekom poslužitelju, dok na jednom repozitoriju može raditi jedna ili više osoba.
 
 ### Napišite Git naredbu s kojom se inicijalizira Git repozitorij. Rješenje:
-git init
+```git init```
 
 ### Napišite Git naredbu s kojom se lokalno sprema trenutna verzija repozitorija.
 
 Rješenje:
-git commit -m "message"
+```git commit -m "message"```
 
 
 ### Napišite Git naredbu za zapisivanje svih lokalnih commitova na udaljeni repozitorij (npr. GitHub).
 
 Rješenje:
-git push
+```git push```
 
 
 ### Napišite Git naredbu za povlačenje promjena s udaljenog na lokalni repozitorij.
 
 Rješenje:
-git pull
+```git pull```
 
 
 ### Napišite Git naredbu za spajanje dvije Git grane kako bi se promjene iz jedne zapisale u drugu (u glavnu granu repozitorija – master).
 
 Rješenje:
-git merge
+```git merge```
 
 ### Što predstavlja jQuery?
 
@@ -462,16 +469,16 @@ Snažan upravitelj programskim paketima:
 ### Napišite npm naredbu za instalaciju paketa "lodash" i editiranje package.json datoteke (ovisnost se zapisuje u datoteku package.json).
 
 Rješenje:
-
+```
 npm	install	--save	lodash
 ili			
 npm	install	lodash	
-
+```
 
 ### Napišite npm naredbu za instalaciju paketa "jest" koji se koristi samo prilikom razvoja aplikacije. Ovisnost se zapisuje u datoteku package.json (naredba editira package.json datoteku).
 
 Rješenje:
-npm install --save-dev jest
+```npm install --save-dev jest```
 
 ### Što su task runner-i? Odgovor:
 Task runner je alat koji omogućuje automatizaciju ponavljajućih zadataka koji se tipično rade ručno tijekom razvoja projekta.
@@ -482,18 +489,15 @@ Alat koji se koristi prilikom izgradnje aplikacije za produkciju.
 Omogućuje povezivanje i optimizaciju više modula (datoteka) u jedan proizvodno spreman paket.
 Primjeri: webpack, rollup, browserify, …
 
-
 ### Objasnite što je React.
 
 Odgovor:
 React je popularna JavaScript biblioteka koja služi za izradu korisničkih sučelja.
 Pomoću malih izoliranih dijelova koda (komponenti) stvaramo kompleksno, efikasno i fleksibilno korisničko sučelje.
 
-
 ### Napišite naredbu za kreiranje React aplikacije preko CLI-a (Command- line interface). Naziv aplikacije glasi "react-app".
 
-npx create-react-app react-app
-
+```npx create-react-app react-app```
 
 ### Što je potrebno napraviti kako bi se programski kôd napisan u jednoj datoteci mogao koristiti u drugoj datoteci?
 
@@ -503,7 +507,7 @@ Kod je potrebno:
 
 
 ### Prikazana je definicija React komponente koja sadrži grešku u JSX sintaksi. Objasnite u čemu je greška.
-
+```
 function MyComponent() {
 return (
 <div>
@@ -512,13 +516,13 @@ return (
 </div>
 );
 }
-
+```
 ### Ako komponenta vraća više JSX elemenata, svaki mora biti ugniježđen u jednom vršnom elementu, najčešće elementu <div>
  ispravno
 
 ### Što je potrebno upisati na prazno mjesto kako bi uključili JavaScript izraz
 ### unutar JSX te u sadržaj koji generira ugradili zbroj konstanti x i y?
-
+```
 function MyComponent() {
 const x = 5, y = 7;
 return (
@@ -526,7 +530,7 @@ return (
 <h1>Hello!</h1>
 <p>Zbroj: {x + y}</p>
 </div>
-
+```
 ### Unutar JSX-a JavaScript kod je potrebno postaviti unutar vitičastih zagrada: {JavaScript code}
  ispravno
 
@@ -534,19 +538,19 @@ return (
 }
 
 ### Ako je vrijednost konstante "user" jednaka "administrator" komponenta vraća poruku "Hello Friend", u suprotnom vraća poruku "Hello Stranger". Što je potrebno upisati na prazna mjesta kako bi se postiglo zadano uvjetno iscrtavanje?
-
+```
 function MyComponent() {
 const user = "administrator";
 const greetings = user === "administrator" 	 <p>Hello Friend</p>   <p>Hello Stranger</p>; return <div>{greetings}</div>;
 }
-
+```
 ### Ako je vrijednost konstante "user" jednaka "administrator" komponenta vraća poruku "Hello Friend", u suprotnom vraća poruku "Hello Stranger". Što je potrebno upisati na prazna mjesta kako bi se postiglo zadano uvjetno iscrtavanje?
-
+```
 function MyComponent() {
 const user = "administrator";
 const greetings = user === "administrator" ? <p>Hello Friend</p> : <p>Hello Stranger</p>; return <div>{greetings}</div>;
 }
-
+```
 
 ### Na koja dva načina je moguće kreirati komponente unutar React biblioteke?
 
@@ -564,7 +568,7 @@ Protok podataka kroz propse je uvijek jednosmjeran - iz komponente roditelj u ko
 
 ### Što je potrebno upisati na prazno mjesto kako bi komponenti "ChildComponent" proslijedili props "name" s proizvoljnom vrijednošću (npr. "Child")?
 
-
+```
 function ParentComponent() { return (
 <div>
 <h1>Ja sam ParentComponent</h1>
@@ -576,9 +580,9 @@ function ChildComponent(props) { return <h1>Ja sam {props.name}</h1>;
 
 );
 }
-
+```
 ### Što je potrebno upisati na prazno mjesto kako bi komponenti "ChildComponent" proslijedio props "name" s proizvoljnom vrijednošću (npr. "Child")?
-
+```
 function ParentComponent() { return (
 <div>
 <h1>Ja sam ParentComponent</h1>
@@ -590,7 +594,7 @@ function ChildComponent(props) { return <h1>Ja sam {props.name}</h1>;
 
 );
 }
-
+```
 ### Što predstavlja stanje komponente te što se dogodi s komponentom ako se ono promijeni?
 
 Stanje komponente predstavlja built-in objekt koji sadrži podatke o komponenti.
@@ -610,7 +614,7 @@ Primjeri:
 •useEffect hook funkcija omogućuje oponašanje rada metoda životnog ciklusa.
 
 ### Nadopunite definiciju komponente tako da se klikom na gumbić poziva funkcija "handleButtonClick".
-
+```
 function MyComponent() {
 const handleButtonClick = () => { console.log("Button click!");
 };
@@ -619,9 +623,9 @@ return (
 <button 	>Klikni me!</button>
 );
 }
-
+```
 ### Nadopunite definiciju komponente tako da se klikom na gumbić poziva funkcija "handleButtonClick".
-
+```
 function MyComponent() {
 const handleButtonClick = () => { console.log("Button click!");
 };
@@ -630,7 +634,7 @@ return (
 <button onClick={handleButtonClick}>Klikni me!</button>
 );
 }
-
+```
 ### Navedite faze životnog ciklusa React komponente.
 
 1.Inicijalizacija komponente (initialization)
