@@ -1,18 +1,16 @@
 ### Na zadanom primjeru objasnite razliku između HTML oznake i atributa:
-<audio controls src="glazba/jingl.mp3"></audio>
+```<audio controls src="glazba/jingl.mp3"></audio>```
 
 HTML oznaka: audio
 Određuje tip HTML elementa te daje značenje njegovom sadržaju
 HTML atributi: controls, src
 Pruža dodatne informacije o sadržaju HTML elementa
 
-### Potrebno je HTML dokumentu dodijeliti metapodatak koji opisuje njegov
-### sadržaj u formi sljedeće rečenice "Službene stranice Učilišta Algebra". Što je potrebno napisati unutar <head> oznake HTML dokumenta kako bi se to postiglo?
+### Potrebno je HTML dokumentu dodijeliti metapodatak koji opisuje njegov sadržaj u formi sljedeće rečenice "Službene stranice Učilišta Algebra". Što je potrebno napisati unutar <head> oznake HTML dokumenta kako bi se to postiglo?
 
-<meta name="description" content="Službene stranice Učilišta Algebra" />
+```<meta name="description" content="Službene stranice Učilišta Algebra" />```
 
-### Potrebno je HTML dokumentu dodijeliti oznaku jezika sadržaja "en".
-### Koji atribut je potrebno dodijeliti elementu <html> kako bi se to postiglo?
+### Potrebno je HTML dokumentu dodijeliti oznaku jezika sadržaja "en". Koji atribut je potrebno dodijeliti elementu <html> kako bi se to postiglo?
 
 ```<html lang="en"></html>```
 
