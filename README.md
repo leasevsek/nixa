@@ -20,6 +20,15 @@ JavaScript jezik se razvija prema ECMAScript specifikaciji:
 •opisuje sintaksu i ponašanje programskog jezika
 •definira standard za implementaciju JavaScript jezika.
 
+### Što su task runner-i? Odgovor:
+Task runner je alat koji omogućuje automatizaciju ponavljajućih zadataka koji se tipično rade ručno tijekom razvoja projekta. Primjeri: gulp, grunt, broccoli, brunch, …
+
+### let/const deklaracije
+Let deklaracija
+Prednosti let deklaracije (naspram var):
+1. Označuje da planiramo mijenjati tu varijablu
+2. Opseg varijable je ograničen unutar bloka, ne funkcije
+Const ma slično ponašanje kao let deklaracija (block scope), osim što se vrijednost varijable ne može mijenjati.
 
 ### Na zadanom primjeru objasnite razliku između HTML oznake i atributa:
 ```<audio controls src="glazba/jingl.mp3"></audio>```
