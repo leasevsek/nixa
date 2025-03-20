@@ -1,7 +1,8 @@
 ### Što je HTML?
-
 HyperText Markup Language (HTML) je prezentacijski jezik, odnosno jezik označavanja, koji se koristi za kreiranje web stranica. Aktualna verzija je HTML5, a njegova glavna svrha je definiranje pojedinih komponenti web stranice, uključujući njezinu strukturu (layout), sadržaj i karakteristike.
 
+### Što je minifikacija?
+Proces prilagodbe koda za produkciju, čime se smanjuje veličina datoteke te ubrzava njeno preuzimanje sa poslužitelja.
 
 
 ### Na zadanom primjeru objasnite razliku između HTML oznake i atributa:
