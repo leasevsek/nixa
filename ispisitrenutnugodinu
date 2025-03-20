@@ -1,0 +1,5 @@
+function ispisiTrenutnuGodinu(elementId) {
+  var trenutnaGodina = new Date().getFullYear();
+  document.getElementById(elementId).textContent = trenutnaGodina;
+}
+
