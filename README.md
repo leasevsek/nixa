@@ -30,6 +30,68 @@ Prednosti let deklaracije (naspram var):
 2. Opseg varijable je ograničen unutar bloka, ne funkcije
 Const ma slično ponašanje kao let deklaracija (block scope), osim što se vrijednost varijable ne može mijenjati.
 
+### DOM elementi
+
+document.getElementById("header-title");
+document.getElementsByTagName("li");
+document.getElementsByClassName("description");
+document.getElementsByName("gender");
+document.querySelector("#header-title");
+document.querySelectorAll(".description");
+
+### Linijski - inline CSS
+
+• Linijski CSS
+• unutar HTML oznaka  dodavanje atributa “style” HTML elementu
+• ne koriste se selektori
+• ograničava primjenu CSS pravila samo na element u kojemu su napisana
+• daje nepregledan kod
+• primjer:
+<p style="color:red;font-size:16px;">Odlomak teksta</p>
+
+### Varijabla u SCSS-u
+
+$myColor: red;
+
+h1 {
+  $myColor: green !global;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+
+### Metode životnog ciklusa
+
+životni ciklus komponente može se definirati kao niz metoda koje
+se pozivaju u različitim fazama postojanja komponente
+• možemo definirati kod koji će se izvršiti u točno određenom trenutku procesa
+• te metode nazivamo lifecycle methods, a pozivaju se u sljedećim
+fazama:
+• inicijalizacija komponente (initialization)
+• postavljanje na DOM (mounting)
+• ažuriranje (updating)
+• brisanje iz DOM-a (unmounting)
+
+### Što je git
+
+Git je distribuirani sustav za verzioniranje koda (DVCS)
+• Omogućuje praćenje promjena u izvornom kodu tijekom
+razvoja softvera te koordiniranje rada među programerima
+• Git ne nudi mehanizme kontrole pristupa, ali je dizajniran za
+rad s drugim alatima koji su specijalizirani za kontrolu pristupa
+(git repozitoriji - GitHub, GitLab, Bitbucket, ..)
+
+### Što je repozitorij?
+
+Repozitorij (repository - repo) je mjesto na kojem se
+pohranjuju sve datoteke jednog projekta
+• Repozitoriji mogu biti lokalni ili na nekom poslužitelju (ovisno
+o sustavu za verzioniranje koji koristimo)
+• Na jednom repozitoriju može raditi jedna ili više osoba
+• Neki od popularnih repozitorija: GitHub, GitLab, Bitbucket
+
 ### Na zadanom primjeru objasnite razliku između HTML oznake i atributa:
 ```<audio controls src="glazba/jingl.mp3"></audio>```
 
