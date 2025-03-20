@@ -1,3 +1,9 @@
+### Što je HTML?
+
+HyperText Markup Language (HTML) je prezentacijski jezik, odnosno jezik označavanja, koji se koristi za kreiranje web stranica. Aktualna verzija je HTML5, a njegova glavna svrha je definiranje pojedinih komponenti web stranice, uključujući njezinu strukturu (layout), sadržaj i karakteristike.
+
+
+
 ### Na zadanom primjeru objasnite razliku između HTML oznake i atributa:
 ```<audio controls src="glazba/jingl.mp3"></audio>```
 
