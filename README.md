@@ -4,6 +4,22 @@ HyperText Markup Language (HTML) je prezentacijski jezik, odnosno jezik označav
 ### Što je minifikacija?
 Proces prilagodbe koda za produkciju, čime se smanjuje veličina datoteke te ubrzava njeno preuzimanje sa poslužitelja.
 
+### Koji su temelji pristupačnosti web stranica?
+• Pristupačnost web rješenja:
+• mogućnost da se web rješenje koristi prema potrebama i mogućnostima korisnika
+• Postiže se:
+• primjenom semantičkih HTML elemenata
+• pravilnom definicijom HTML atributa (npr. "alt" kao zamjenski tekst za grafike, "role" za davanje značenja elementima, "lang" kao oznaka jezika sadržaja itd.)
+• osiguranjem tekstualnog sadržaja kao alternative za ne-tekstualni sadržaj (npr. tekstualni transkript za audio sadržaj)
+• omogućavanjem korisnicima da prilagode vlastito sučelje (veličinu znakova, boje itd.)
+
+
+### Što je ECMAScript?
+
+JavaScript jezik se razvija prema ECMAScript specifikaciji:
+•opisuje sintaksu i ponašanje programskog jezika
+•definira standard za implementaciju JavaScript jezika.
+
 
 ### Na zadanom primjeru objasnite razliku između HTML oznake i atributa:
 ```<audio controls src="glazba/jingl.mp3"></audio>```
