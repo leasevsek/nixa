@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikacija za recenziranje knjiga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Recenzija knjiga</h1>
-        <form id="review-form" action="" method="get">
-            <label for="unosnaziva">Unos naziva</label><br>
-            <input required type="text" name="unosNaziva" id="unosnaziva"><br><br>
+    <div class="container">
+        <form id="review-form">
 
-            <label for="unosocjene">Unos ocjene (1-10)</label><br>
-            <input required type="number" min="1" max="10" name="unosOcjene" id="unosocjene">
-            <button type="submit">Pohrani</button><br>
+                <div class="input-wrapper-1">
+                    <label for="unosnaziva">Naziv</label>
+                    <input required type="text" id="unosnaziva">
+                </div>
+                <div class="input-wrapper-2">
+                    <label for="unosocjene">Ocjena</label>
+                    <input required type="number" min="1" max="10" id="unosocjene">
+                </div>
+                <button type="submit" class="pohrani">Pohrani</button>
+
         </form>
     </div>
-    <div id="recenzije"></div>
-    <script src="script.js"></script>
 
+    <div id="recenzije"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
