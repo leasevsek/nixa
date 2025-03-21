@@ -13,6 +13,22 @@ Proces prilagodbe koda za produkciju, čime se smanjuje veličina datoteke te ub
 • osiguranjem tekstualnog sadržaja kao alternative za ne-tekstualni sadržaj (npr. tekstualni transkript za audio sadržaj)
 • omogućavanjem korisnicima da prilagode vlastito sučelje (veličinu znakova, boje itd.)
 
+### Što je potrebno napisati da bi se iskoristila CSS3 varijabla "color-primary" kao vrijednost za promjenu boje teksta?
+
+  :root {
+    --color-primary: #3498db;
+  }
+
+  p {
+    color: var(--color-primary);
+  }
+
+###  15. Potrebno je pozvati SCSS funkciju "lighten". Koja od navedenih linija koda je ispravna?
+color: lighten(#3498db, 20%);
+
+### JavaScript je funkcijski programski jezik. Y
+### JavaScript je objektno-orijentirani programski jezik. Y
+
 
 ### Što je ECMAScript?
 
