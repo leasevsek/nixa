@@ -22,9 +22,8 @@ form.addEventListener("submit", function (e) {
     const vrijeme = new Date().toLocaleString();
 
     recenzija.innerHTML=`
-    <strong>${unosnaziva}</strong>
-    Ocjena:${unosocjene}
-    Datum:${vrijeme}
+    <strong>${unosnaziva} - ${unosocjene}</strong> 
+    ${vrijeme}
     <div class="actions">
       <button class="favorit">Označi kao omiljeno</button>
       <button class="izbrisi">Obriši</button>
@@ -35,7 +34,7 @@ form.addEventListener("submit", function (e) {
     const favorit = recenzija.querySelector(".favorit");
     const izbrisi = recenzija.querySelector(".izbrisi");
 
-    /*ovo je dio da se da gumbu funckija da nesto izbrise*/
+    /*ovo je dio da se da gumbu funckija da nesto doda kao favorit*/
 
     favorit.addEventListener("click", function () {
         recenzija.classList.toggle("omiljena");
